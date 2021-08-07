@@ -9871,6 +9871,26 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .user-comment {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .user-comment .separator {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .user-comment .status,
+  .user-comment .time {
+    margin-left: 0 !important;
+  }
+}
+
 .feather {
   width: 16px;
   height: 24px;

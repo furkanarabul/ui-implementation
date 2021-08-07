@@ -35,3 +35,20 @@
         display: block;
     }
 }
+.user-comment {
+    @media screen and (max-width: 767px) {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .separator {
+        @media screen and (max-width: 767px) {
+            display: none !important;
+        }
+    }
+    .status,
+    .time {
+        @media screen and (max-width: 767px) {
+            margin-left: 0 !important;
+        }
+    }
+}
