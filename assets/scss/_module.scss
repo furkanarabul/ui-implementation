@@ -1,0 +1,34 @@
+//idea
+.idea-image{
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+}
+//progress section
+.progress {
+    width: 100%;
+    height: 1.5rem;
+    .progress-bar {
+        background: rgb(240, 240, 240);
+    }
+    .progress-bar-success {
+        background: #8c87e6;
+        border-right: solid 2px #625eb1;
+    }
+    .progress-bar-noncomplete {
+        border-right: solid 2px rgb(221, 221, 221);
+    }
+    .progress-bar:last-child {
+        border: none;
+    }
+}
+//meet the team section
+.btn-apply {
+    background: #8c87e6;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover {
+        background: #625eb1;
+    }
+}

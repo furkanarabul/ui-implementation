@@ -1,0 +1,53 @@
+// Bootstrap overrides variables
+
+::-webkit-resizer {
+    display: none;
+}
+::-webkit-input-placeholder {
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+}
+
+/* Overriding styles */
+
+::-webkit-input-placeholder {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: "Rubik", sans-serif;
+    font-size: 13px!important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    font-family: "Rubik", sans-serif;
+    font-size: 13px!important;
+}
+textarea {
+    -moz-appearance:none;
+    outline:0px none transparent;
+    border: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0 !important;
+}
+p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+}
+.input-group-text {
+    border: none !important;
+}
+.card {
+    border: none !important;
+}
