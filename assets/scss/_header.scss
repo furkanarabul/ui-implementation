@@ -1,13 +1,24 @@
-.hero-image{
-    background: no-repeat center center;
-    background-color: #6c757d;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 250px;
-}
-.header-caption {
-    letter-spacing: 2px;
-}
-.header-small-caption {
-    letter-spacing: 1px;
+.header {
+    &-image {
+        background: no-repeat center center;
+        background-color: #6c757d;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 250px;
+        @media screen and (max-width: 991px) {
+            height: 150px;
+        }
+    }
+    &-caption {
+        letter-spacing: 2px;
+    }
+    &-small-caption {
+        letter-spacing: 1px;
+    }
+    &-buttons {
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+            justify-content: flex-start !important;
+        }
+    }
 }

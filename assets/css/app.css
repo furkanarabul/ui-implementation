@@ -37,10 +37,20 @@
   font-size: 13px !important;
 }
 
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 textarea {
   -moz-appearance: none;
   outline: 0px none transparent;
   border: none;
+}
+
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -9787,12 +9797,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.hero-image {
+.header-image {
   background: no-repeat center center;
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
   height: 250px;
+}
+
+@media screen and (max-width: 991px) {
+  .header-image {
+    height: 150px;
+  }
 }
 
 .header-caption {
@@ -9801,6 +9817,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header-small-caption {
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-buttons {
+    margin-top: 20px;
+    justify-content: flex-start !important;
+  }
 }
 
 .idea-image {
@@ -9815,20 +9838,20 @@ a.text-dark:hover, a.text-dark:focus {
   height: 1.5rem;
 }
 
-.progress .progress-bar {
+.progress-bar {
   background: #f0f0f0;
 }
 
-.progress .progress-bar-success {
+.progress-bar-success {
   background: #8c87e6;
   border-right: solid 2px #625eb1;
 }
 
-.progress .progress-bar-noncomplete {
+.progress-bar-noncomplete {
   border-right: solid 2px #dddddd;
 }
 
-.progress .progress-bar:last-child {
+.progress-bar:last-child {
   border: none;
 }
 
@@ -9840,6 +9863,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-apply:hover {
   background: #625eb1;
+}
+
+@media screen and (max-width: 991px) {
+  .btn-apply {
+    display: block;
+  }
 }
 
 .feather {
@@ -9869,14 +9898,12 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1;
 }
 
-.feather-user,
-.feather-message-square {
+.feather-user, .feather-message-square {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.feather-user:hover,
-.feather-message-square:hover {
+.feather-user:hover, .feather-message-square:hover {
   opacity: 1;
   fill: #353535;
 }
