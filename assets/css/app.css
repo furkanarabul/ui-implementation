@@ -11,12 +11,16 @@
   /* Firefox 18- */
   font-size: 25px;
   font-family: "Rubik", sans-serif;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-size: 25px;
   font-family: "Rubik", sans-serif;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 /* Overriding styles */
@@ -9819,15 +9823,7 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 768px) {
-  .header-buttons {
-    margin-top: 20px;
-    justify-content: flex-start !important;
-  }
-}
-
-.header-caption,
-.header-small-caption {
+.header-caption, .header-small-caption {
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   /* Firefox */
@@ -9853,6 +9849,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-buttons {
+    margin-top: 20px;
+    justify-content: flex-start !important;
   }
 }
 

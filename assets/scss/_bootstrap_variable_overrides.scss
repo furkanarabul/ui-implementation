@@ -7,24 +7,22 @@
     font-size: 25px;
     font-family: "Rubik", sans-serif;
 }
-
 :-moz-placeholder { /* Firefox 18- */
     font-size: 25px;
     font-family: "Rubik", sans-serif;
+    appearance: none;
 }
-
 ::-moz-placeholder {  /* Firefox 19+ */
     font-size: 25px;
     font-family: "Rubik", sans-serif;
+    appearance: none;
 }
-
 /* Overriding styles */
 
 ::-webkit-input-placeholder {
     font-family: "Rubik", sans-serif;
     font-size: 13px!important;
 }
-
 :-moz-placeholder { /* Firefox 18- */
     font-family: "Rubik", sans-serif;
     font-size: 13px!important;
